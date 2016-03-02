@@ -1,8 +1,4 @@
-Steven Huang
-301223245
-sha152
-
-CMPT361 Assignment 2
+york
 
 Instructions:
 - Same keys as per requirements
