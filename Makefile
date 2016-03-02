@@ -17,7 +17,7 @@ INCLUDEDIR=/usr/include/
 LIBDIR=/usr/lib
 
 # If you have more source files add them here 
-SOURCE= FruitTetris.cpp include/InitShader.cpp robot.cpp
+SOURCE= FruitTetris.cpp include/InitShader.cpp 
 
 # The compiler we are using 
 CC= g++
@@ -44,10 +44,11 @@ LIBFLAG= -L$(LIBDIR)
 OBJECT= $(SOURCE:.cpp=.o)
 
 # Don't touch any of these either if you don't know what you're doing 
-all: $(OBJECT) depend
+#all: $(OBJECT) depend
+all: $(OBJECT)
 	$(CC) $(CFLAGS) $(INCLUDEFLAG) $(LIBFLAG) $(OBJECT) -o $(EXECUTABLE) $(LDFLAGS)
 
-depend:
+#depend:
 	$(CC) -M $(SOURCE) > depend
 
 $(OBJECT):
@@ -59,4 +60,4 @@ clean_object:
 clean:
 	rm -f $(OBJECT) depend $(EXECUTABLE)
 
-include depend
+#include depend

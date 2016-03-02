@@ -13,12 +13,6 @@ by Rui Ma (ruim@sfu.ca) on 2014-03-04.
 
 Modified in Sep 2014 by Honghua Li (honghual@sfu.ca).
 */
-
-/* Steven Huang
- * 301223245
- * sha152
- */
-
 #include "include/Angel.h"
 #include <set>
 #include <vector>
